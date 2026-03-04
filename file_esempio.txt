@@ -1,0 +1,1 @@
+Prima prova: verifico il funzionamento di git.
