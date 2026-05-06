@@ -1,0 +1,9 @@
+Durante le misurazioni, ho osservato che la soglia di convenienza tra Quicksort e Insertion Sort cambia drasticamente a seconda della compilazione.
+
+In Debug la soglia è molto bassa (circa 11 elementi) a causa dell'overhead delle chiamate ricorsive non ottimizzate. 
+
+In Release, grazie alle ottimizzazioni del compilatore, il Quicksort rimane efficiente più a lungo, spostando la soglia attorno ai 52 elementi.
+
+Per l'algoritmo ibrido ho quindi scelto di utilizzare la soglia calcolata in Release.
+
+Nota per la correzione: Il file "time_sorts.cpp" contiene il main per la misurazione dei tempi dell'esercitazione 5, mentre i vari "test_*.cpp" contengono i test unitari. In quick_sort.hpp sono presenti sia la versione standard che quella ibrida.
